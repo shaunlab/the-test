@@ -19,6 +19,7 @@ import Navbar from "~/components/Navbar.vue";
 import HomepageHero from "~/components/HomepageHero.vue";
 import TitleTextAside from "~/components/TitleTextAside.vue";
 import CarouselWithText from '~/components/CarouselWithText.vue';
+
 import ContactForm from '~/components/ContactForm.vue';
 const client = createClient();
 
