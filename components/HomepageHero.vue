@@ -1,14 +1,11 @@
 <template>
 
   <div class="o-homepage-hero d-flex flex-column text-center">
-    <span class="d-none">{{ $device }}</span>
     <img
       class="a-bg mobile"
-      v-if="$device.isMobile"
-      :src="mobileImageUrl"
+      :src="image"
       alt="hero"
     />
-    <img class="a-bg desktop" v-else :src="desktopImageUrl" alt="hero" />
     <img class="d-md-none" src="/test-circle.svg" alt="circle" />
     <div class="m-wrap">
       <div class="m-copy">
@@ -21,7 +18,16 @@
 
 <script>
 export default {
-  props: ['desktopImageUrl', 'mobileImageUrl', 'title', 'caption']
+  props: ['desktopImageUrl', 'mobileImageUrl', 'title', 'caption'],
+  computed: {
+    image() {
+      if (this.$device.isMobile) {
+        return this.mobileImageUrl;
+      } else {
+        return this.desktopImageUrl;
+      }
+    }
+  }
 }
 </script>
 
