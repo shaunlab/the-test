@@ -1,0 +1,31 @@
+{
+  "name": "the-test-nuxt",
+  "version": "1.0.0",
+  "description": "Assessment for new starters at Riverr",
+  "author": "Shaun Visser",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.2",
+    "bootstrap-vue": "^2.21.2",
+    "contentful": "^8.1.7",
+    "nuxt": "^2.0.0",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/device": "^2.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
