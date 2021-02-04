@@ -1,12 +1,14 @@
 <template>
+
   <div class="o-homepage-hero d-flex flex-column text-center">
+    <span class="d-none">{{ $device }}</span>
     <img
-      class="a-bg"
+      class="a-bg mobile"
       v-if="$device.isMobile"
       :src="mobileImageUrl"
       alt="hero"
     />
-    <img class="a-bg" v-else :src="desktopImageUrl" alt="hero" />
+    <img class="a-bg desktop" v-else :src="desktopImageUrl" alt="hero" />
     <img class="d-md-none" src="/test-circle.svg" alt="circle" />
     <div class="m-wrap">
       <div class="m-copy">
