@@ -2,7 +2,7 @@
 
   <div class="o-homepage-hero d-flex flex-column text-center">
     <img
-      class="a-bg mobile"
+      class="a-img a-bg mobile"
       :src="image"
       alt="hero"
     />
@@ -82,7 +82,7 @@ export default {
   .o-homepage-hero {
     justify-content: center;
     .a-img {
-      left: 28.5%;
+      left: 28.5%!important;
     }
     .m-wrap {
       margin-top: 0;
@@ -105,7 +105,7 @@ export default {
 @media ($lg-up) {
   .o-homepage-hero {
     .a-img {
-      left: 24%;
+      left: 24%!important;
     }
     .m-wrap {
       .m-copy {
@@ -118,7 +118,7 @@ export default {
 @media ($hd-up) {
   .o-homepage-hero {
     .a-img {
-      left: 30.5%;
+      left: 30.5%!important;
     }
   }
 }

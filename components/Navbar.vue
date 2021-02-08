@@ -7,7 +7,7 @@
       variant="info"
       v-b-scrollspy="{ offset: 0, method: 'auto' }"
     >
-      <b-navbar-brand href="#" class="d-none d-sm-block"
+      <b-navbar-brand href="#" aria-label="The Test" class="d-none d-sm-block"
         ><svg
           width="97"
           height="97"

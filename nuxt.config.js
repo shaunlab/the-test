@@ -6,6 +6,9 @@ module.exports = {
    */
   target: "static",
   head: {
+    htmlAttrs: {
+      lang: "en"
+    },
     title: "the-test-nuxt",
     meta: [
       { charset: "utf-8" },
